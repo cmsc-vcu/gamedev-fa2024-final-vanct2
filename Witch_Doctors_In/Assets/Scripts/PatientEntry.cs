@@ -14,7 +14,7 @@ public class PatientEntry : MonoBehaviour
         ShowPatient();
     }
 
-    void ShowPatient()
+    public void ShowPatient()
     {
         // Randomly select a species (orc, vampire, demon)
         string[] species = { "Orc", "Vampire", "Demon" };
@@ -25,7 +25,7 @@ public class PatientEntry : MonoBehaviour
         groupASymptom = groupASymptoms[Random.Range(0, groupASymptoms.Length)];
 
         // Display the introduction dialogue
-        dialogueText.text = $"I am a {monsterSpecies} and I have a {groupASymptom}. Can you help me?";
+        dialogueText.text = $"Hey, Doc. I'm a {monsterSpecies} with a bad case of {groupASymptom}. Can you help me out?";
 
         // Pass the species to the PotionVial to set correct ingredients
         potionVial.SetCorrectIngredients(monsterSpecies);
