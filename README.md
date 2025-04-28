@@ -1,4 +1,4 @@
-# Witch Doctor Game README
+# Witch Doctor's In
 
 ## General Gameplay Goals
 
